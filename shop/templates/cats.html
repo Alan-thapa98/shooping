@@ -1,0 +1,1325 @@
+{% extends 'base.html' %}
+{% block title %}
+cats
+{% endblock title %}
+{% block body %}
+<div class="ui grid" style="margin-top:0px;">
+      <!-- types of products -->
+      <div class="column three wide" style="margin-top:0px;     padding: 0px;
+    margin: 0px;">
+            <div class="ui inverted segment"
+                  style="position: sticky; top: 0px; width: 100%; height: 100vh; overflow: scroll;">
+                  <p>Types:</p>
+                  <button class="ui inverted tiny button">Inverted</button>
+                  <button class="ui inverted basic tiny button">Basic</button>
+                  <button class="ui inverted blue tiny  button">Colored</button>
+                  <button class="ui inverted blue tiny basic button">Basic Colored</button>
+                  <button class="ui inverted tiny button">Inverted</button>
+                  <button class="ui inverted basic tiny button">Basic</button>
+                  <button class="ui inverted blue tiny  button">Colored</button>
+                  <button class="ui inverted blue tiny basic button">Basic Colored</button>
+                  <button class="ui inverted tiny button">Inverted</button>
+                  <button class="ui inverted basic tiny button">Basic</button>
+                  <button class="ui inverted blue tiny  button">Colored</button>
+                  <button class="ui inverted blue tiny basic button">Basic Colored</button>
+                  <button class="ui inverted tiny button">Inverted</button>
+                  <button class="ui inverted basic tiny button">Basic</button>
+                  <button class="ui inverted tiny button">Inverted</button>
+                  <button class="ui inverted basic tiny button">Basic</button>
+                  <button class="ui inverted blue tiny  button">Colored</button>
+                  <button class="ui inverted blue tiny basic button">Basic Colored</button>
+                  <button class="ui inverted tiny button">Inverted</button>
+                  <button class="ui inverted basic tiny button">Basic</button>
+                  <button class="ui inverted blue tiny  button">Colored</button>
+                  <button class="ui inverted blue tiny basic button">Basic Colored</button>
+                  <button class="ui inverted tiny button">Inverted</button>
+                  <button class="ui inverted basic tiny button">Basic</button>
+                  <button class="ui inverted blue tiny  button">Colored</button>
+                  <button class="ui inverted blue tiny basic button">Basic Colored</button>
+            </div>
+      </div>
+
+      <style>
+            /* ========== Product ========== */
+
+            .product:hover {
+                  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+            }
+
+            .product .img__container {
+                  overflow: hidden;
+            }
+
+            .img__container img {
+                  transition: all 0.5s ease-in-out;
+            }
+
+            .product:hover .img__container img {
+                  transform: scale(1.05);
+            }
+      </style>
+
+      <div class="column  thirteen wide" style="margin-top:0px;">
+            <!-- tranding  -->
+            <div class="ui four cards special cards  stackable fluid" style="padding-bottom: 5%">
+                  <!-- looping  -->
+                  <div class="card ">
+                        <div class="blurring dimmable image image_over_flow">
+                              <!-- image -->
+                              <div class="product">
+                                    <div class="img__container">
+                                          <img src="../static/images/shirt.jpg" style="height:250px; width: 100%;"
+                                                alt="">
+                                    </div>
+                              </div>
+                              <!-- <img src="../static/images/shirt.jpg" class="ui large image zoom_image"
+                                    style="height:250px;"> -->
+                              <!--  style="height: 320px;" for body -->
+                        </div>
+                        <!-- description -->
+                        <div class="content">
+                              <p><a href="/shop/cats_views" style="color:black;"><strong>Lorem ipsum dolor, sit amet
+                                                consectetur
+                                                adipisicing elit.
+                                                Reprehenderit repudiandae...</strong></a></p>
+                        </div>
+                        <!-- rating -->
+                        <div class="extra content" style="text-align: center;">
+                              <a href="#">
+                                    <div data-rating="4" class="ui star rating">
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          &nbsp; 2334 Satrs
+                                    </div>
+                              </a>
+                        </div>
+                        <!-- Rs and addto cart -->
+                        <div class="extra content">
+                              <div class="ui two bottom attached basic buttons">
+                                    <div class="ui button">
+                                          Rs. 2.99
+                                    </div>
+                                    <div class="ui button">
+                                          AddToCart
+                                    </div>
+                              </div>
+                        </div>
+
+                  </div>
+                  <div class="card ">
+                        <div class="blurring dimmable image image_over_flow">
+                              <img src="../static/images/shirt.jpg" class="ui large image zoom_image"
+                                    style="height:250px;">
+                              <!--  style="height: 320px;" for body -->
+                        </div>
+                        <div class="content">
+                              <p><a href="/shop/cats_views" style="color:black;"><strong>Lorem ipsum dolor, sit amet
+                                                consectetur
+                                                adipisicing elit.
+                                                Reprehenderit repudiandae...</strong></a></p>
+                        </div>
+
+                        <div class="extra content" style="text-align: center;">
+                              <a href="#">
+                                    <div data-rating="4" class="ui star rating">
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          &nbsp; 2334 Satrs
+                                    </div>
+                              </a>
+                        </div>
+
+                        <div class="extra content">
+                              <div class="ui two bottom attached basic buttons">
+                                    <div class="ui button">
+                                          Rs. 2.99
+                                    </div>
+                                    <div class="ui button">
+                                          AddToCart
+                                    </div>
+                              </div>
+                        </div>
+
+                  </div>
+                  <div class="card ">
+                        <div class="blurring dimmable image image_over_flow">
+                              <img src="../static/images/shirt.jpg" class="ui large image zoom_image"
+                                    style="height:250px;">
+                              <!--  style="height: 320px;" for body -->
+                        </div>
+                        <div class="content">
+                              <p><a href="/shop/cats_views" style="color:black;"><strong>Lorem ipsum dolor, sit amet
+                                                consectetur
+                                                adipisicing elit.
+                                                Reprehenderit repudiandae...</strong></a></p>
+                        </div>
+
+                        <div class="extra content" style="text-align: center;">
+                              <a href="#">
+                                    <div data-rating="4" class="ui star rating">
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          &nbsp; 2334 Satrs
+                                    </div>
+                              </a>
+                        </div>
+
+                        <div class="extra content">
+                              <div class="ui two bottom attached basic buttons">
+                                    <div class="ui button">
+                                          Rs. 2.99
+                                    </div>
+                                    <div class="ui button">
+                                          AddToCart
+                                    </div>
+                              </div>
+                        </div>
+
+                  </div>
+                  <div class="card ">
+                        <div class="blurring dimmable image image_over_flow">
+                              <img src="../static/images/shirt.jpg" class="ui large image zoom_image"
+                                    style="height:250px;">
+                              <!--  style="height: 320px;" for body -->
+                        </div>
+                        <div class="content">
+                              <p><a href="/shop/cats_views" style="color:black;"><strong>Lorem ipsum dolor, sit amet
+                                                consectetur
+                                                adipisicing elit.
+                                                Reprehenderit repudiandae...</strong></a></p>
+                        </div>
+
+                        <div class="extra content" style="text-align: center;">
+                              <a href="#">
+                                    <div data-rating="4" class="ui star rating">
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          &nbsp; 2334 Satrs
+                                    </div>
+                              </a>
+                        </div>
+
+                        <div class="extra content">
+                              <div class="ui two bottom attached basic buttons">
+                                    <div class="ui button">
+                                          Rs. 2.99
+                                    </div>
+                                    <div class="ui button">
+                                          AddToCart
+                                    </div>
+                              </div>
+                        </div>
+
+                  </div>
+                  <div class="card ">
+                        <div class="blurring dimmable image image_over_flow">
+                              <img src="../static/images/shirt.jpg" class="ui large image zoom_image"
+                                    style="height:250px;">
+                              <!--  style="height: 320px;" for body -->
+                        </div>
+                        <div class="content">
+                              <p><a href="/shop/cats_views" style="color:black;"><strong>Lorem ipsum dolor, sit amet
+                                                consectetur
+                                                adipisicing elit.
+                                                Reprehenderit repudiandae...</strong></a></p>
+                        </div>
+
+                        <div class="extra content" style="text-align: center;">
+                              <a href="#">
+                                    <div data-rating="4" class="ui star rating">
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          &nbsp; 2334 Satrs
+                                    </div>
+                              </a>
+                        </div>
+
+                        <div class="extra content">
+                              <div class="ui two bottom attached basic buttons">
+                                    <div class="ui button">
+                                          Rs. 2.99
+                                    </div>
+                                    <div class="ui button">
+                                          AddToCart
+                                    </div>
+                              </div>
+                        </div>
+
+                  </div>
+                  <div class="card ">
+                        <div class="blurring dimmable image image_over_flow">
+                              <img src="../static/images/shirt.jpg" class="ui large image zoom_image"
+                                    style="height:250px;">
+                              <!--  style="height: 320px;" for body -->
+                        </div>
+                        <div class="content">
+                              <p><a href="/shop/cats_views" style="color:black;"><strong>Lorem ipsum dolor, sit amet
+                                                consectetur
+                                                adipisicing elit.
+                                                Reprehenderit repudiandae...</strong></a></p>
+                        </div>
+
+                        <div class="extra content" style="text-align: center;">
+                              <a href="#">
+                                    <div data-rating="4" class="ui star rating">
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          &nbsp; 2334 Satrs
+                                    </div>
+                              </a>
+                        </div>
+
+                        <div class="extra content">
+                              <div class="ui two bottom attached basic buttons">
+                                    <div class="ui button">
+                                          Rs. 2.99
+                                    </div>
+                                    <div class="ui button">
+                                          AddToCart
+                                    </div>
+                              </div>
+                        </div>
+
+                  </div>
+                  <div class="card ">
+                        <div class="blurring dimmable image image_over_flow">
+                              <img src="../static/images/shirt.jpg" class="ui large image zoom_image"
+                                    style="height:250px;">
+                              <!--  style="height: 320px;" for body -->
+                        </div>
+                        <div class="content">
+                              <p><a href="/shop/cats_views" style="color:black;"><strong>Lorem ipsum dolor, sit amet
+                                                consectetur
+                                                adipisicing elit.
+                                                Reprehenderit repudiandae...</strong></a></p>
+                        </div>
+
+                        <div class="extra content" style="text-align: center;">
+                              <a href="#">
+                                    <div data-rating="4" class="ui star rating">
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          &nbsp; 2334 Satrs
+                                    </div>
+                              </a>
+                        </div>
+
+                        <div class="extra content">
+                              <div class="ui two bottom attached basic buttons">
+                                    <div class="ui button">
+                                          Rs. 2.99
+                                    </div>
+                                    <div class="ui button">
+                                          AddToCart
+                                    </div>
+                              </div>
+                        </div>
+
+                  </div>
+                  <div class="card ">
+                        <div class="blurring dimmable image image_over_flow">
+                              <img src="../static/images/shirt.jpg" class="ui large image zoom_image"
+                                    style="height:250px;">
+                              <!--  style="height: 320px;" for body -->
+                        </div>
+                        <div class="content">
+                              <p><a href="/shop/cats_views" style="color:black;"><strong>Lorem ipsum dolor, sit amet
+                                                consectetur
+                                                adipisicing elit.
+                                                Reprehenderit repudiandae...</strong></a></p>
+                        </div>
+
+                        <div class="extra content" style="text-align: center;">
+                              <a href="#">
+                                    <div data-rating="4" class="ui star rating">
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          &nbsp; 2334 Satrs
+                                    </div>
+                              </a>
+                        </div>
+
+                        <div class="extra content">
+                              <div class="ui two bottom attached basic buttons">
+                                    <div class="ui button">
+                                          Rs. 2.99
+                                    </div>
+                                    <div class="ui button">
+                                          AddToCart
+                                    </div>
+                              </div>
+                        </div>
+
+                  </div>
+            </div>
+
+            <!-- recomanded -->
+            <div class="ui four cards special cards  stackable fluid" style="padding-bottom: 5%">
+                  <!-- looping  -->
+                  <div class="card ">
+                        <div class="blurring dimmable image image_over_flow">
+                              <img src="../static/images/shirt.jpg" class="ui large image zoom_image"
+                                    style="height:250px;">
+                              <!--  style="height: 320px;" for body -->
+                        </div>
+                        <div class="content">
+                              <p><a href="/shop/cats_views" style="color:black;"><strong>Lorem ipsum dolor, sit amet
+                                                consectetur
+                                                adipisicing elit.
+                                                Reprehenderit repudiandae...</strong></a></p>
+                        </div>
+
+                        <div class="extra content" style="text-align: center;">
+                              <a href="#">
+                                    <div data-rating="4" class="ui star rating">
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          &nbsp; 2334 Satrs
+                                    </div>
+                              </a>
+                        </div>
+
+                        <div class="extra content">
+                              <div class="ui two bottom attached basic buttons">
+                                    <div class="ui button">
+                                          Rs. 2.99
+                                    </div>
+                                    <div class="ui button">
+                                          AddToCart
+                                    </div>
+                              </div>
+                        </div>
+
+                  </div>
+                  <div class="card ">
+                        <div class="blurring dimmable image image_over_flow">
+                              <img src="../static/images/shirt.jpg" class="ui large image zoom_image"
+                                    style="height:250px;">
+                              <!--  style="height: 320px;" for body -->
+                        </div>
+                        <div class="content">
+                              <p><a href="/shop/cats_views" style="color:black;"><strong>Lorem ipsum dolor, sit amet
+                                                consectetur
+                                                adipisicing elit.
+                                                Reprehenderit repudiandae...</strong></a></p>
+                        </div>
+
+                        <div class="extra content" style="text-align: center;">
+                              <a href="#">
+                                    <div data-rating="4" class="ui star rating">
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          &nbsp; 2334 Satrs
+                                    </div>
+                              </a>
+                        </div>
+
+                        <div class="extra content">
+                              <div class="ui two bottom attached basic buttons">
+                                    <div class="ui button">
+                                          Rs. 2.99
+                                    </div>
+                                    <div class="ui button">
+                                          AddToCart
+                                    </div>
+                              </div>
+                        </div>
+
+                  </div>
+                  <div class="card ">
+                        <div class="blurring dimmable image image_over_flow">
+                              <img src="../static/images/shirt.jpg" class="ui large image zoom_image"
+                                    style="height:250px;">
+                              <!--  style="height: 320px;" for body -->
+                        </div>
+                        <div class="content">
+                              <p><a href="/shop/cats_views" style="color:black;"><strong>Lorem ipsum dolor, sit amet
+                                                consectetur
+                                                adipisicing elit.
+                                                Reprehenderit repudiandae...</strong></a></p>
+                        </div>
+
+                        <div class="extra content" style="text-align: center;">
+                              <a href="#">
+                                    <div data-rating="4" class="ui star rating">
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          &nbsp; 2334 Satrs
+                                    </div>
+                              </a>
+                        </div>
+
+                        <div class="extra content">
+                              <div class="ui two bottom attached basic buttons">
+                                    <div class="ui button">
+                                          Rs. 2.99
+                                    </div>
+                                    <div class="ui button">
+                                          AddToCart
+                                    </div>
+                              </div>
+                        </div>
+
+                  </div>
+                  <div class="card ">
+                        <div class="blurring dimmable image image_over_flow">
+                              <img src="../static/images/shirt.jpg" class="ui large image zoom_image"
+                                    style="height:250px;">
+                              <!--  style="height: 320px;" for body -->
+                        </div>
+                        <div class="content">
+                              <p><a href="/shop/cats_views" style="color:black;"><strong>Lorem ipsum dolor, sit amet
+                                                consectetur
+                                                adipisicing elit.
+                                                Reprehenderit repudiandae...</strong></a></p>
+                        </div>
+
+                        <div class="extra content" style="text-align: center;">
+                              <a href="#">
+                                    <div data-rating="4" class="ui star rating">
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          &nbsp; 2334 Satrs
+                                    </div>
+                              </a>
+                        </div>
+
+                        <div class="extra content">
+                              <div class="ui two bottom attached basic buttons">
+                                    <div class="ui button">
+                                          Rs. 2.99
+                                    </div>
+                                    <div class="ui button">
+                                          AddToCart
+                                    </div>
+                              </div>
+                        </div>
+
+                  </div>
+                  <div class="card ">
+                        <div class="blurring dimmable image image_over_flow">
+                              <img src="../static/images/shirt.jpg" class="ui large image zoom_image"
+                                    style="height:250px;">
+                              <!--  style="height: 320px;" for body -->
+                        </div>
+                        <div class="content">
+                              <p><a href="/shop/cats_views" style="color:black;"><strong>Lorem ipsum dolor, sit amet
+                                                consectetur
+                                                adipisicing elit.
+                                                Reprehenderit repudiandae...</strong></a></p>
+                        </div>
+
+                        <div class="extra content" style="text-align: center;">
+                              <a href="#">
+                                    <div data-rating="4" class="ui star rating">
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          &nbsp; 2334 Satrs
+                                    </div>
+                              </a>
+                        </div>
+
+                        <div class="extra content">
+                              <div class="ui two bottom attached basic buttons">
+                                    <div class="ui button">
+                                          Rs. 2.99
+                                    </div>
+                                    <div class="ui button">
+                                          AddToCart
+                                    </div>
+                              </div>
+                        </div>
+
+                  </div>
+                  <div class="card ">
+                        <div class="blurring dimmable image image_over_flow">
+                              <img src="../static/images/shirt.jpg" class="ui large image zoom_image"
+                                    style="height:250px;">
+                              <!--  style="height: 320px;" for body -->
+                        </div>
+                        <div class="content">
+                              <p><a href="/shop/cats_views" style="color:black;"><strong>Lorem ipsum dolor, sit amet
+                                                consectetur
+                                                adipisicing elit.
+                                                Reprehenderit repudiandae...</strong></a></p>
+                        </div>
+
+                        <div class="extra content" style="text-align: center;">
+                              <a href="#">
+                                    <div data-rating="4" class="ui star rating">
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          &nbsp; 2334 Satrs
+                                    </div>
+                              </a>
+                        </div>
+
+                        <div class="extra content">
+                              <div class="ui two bottom attached basic buttons">
+                                    <div class="ui button">
+                                          Rs. 2.99
+                                    </div>
+                                    <div class="ui button">
+                                          AddToCart
+                                    </div>
+                              </div>
+                        </div>
+
+                  </div>
+                  <div class="card ">
+                        <div class="blurring dimmable image image_over_flow">
+                              <img src="../static/images/shirt.jpg" class="ui large image zoom_image"
+                                    style="height:250px;">
+                              <!--  style="height: 320px;" for body -->
+                        </div>
+                        <div class="content">
+                              <p><a href="/shop/cats_views" style="color:black;"><strong>Lorem ipsum dolor, sit amet
+                                                consectetur
+                                                adipisicing elit.
+                                                Reprehenderit repudiandae...</strong></a></p>
+                        </div>
+
+                        <div class="extra content" style="text-align: center;">
+                              <a href="#">
+                                    <div data-rating="4" class="ui star rating">
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          &nbsp; 2334 Satrs
+                                    </div>
+                              </a>
+                        </div>
+
+                        <div class="extra content">
+                              <div class="ui two bottom attached basic buttons">
+                                    <div class="ui button">
+                                          Rs. 2.99
+                                    </div>
+                                    <div class="ui button">
+                                          AddToCart
+                                    </div>
+                              </div>
+                        </div>
+
+                  </div>
+                  <div class="card ">
+                        <div class="blurring dimmable image image_over_flow">
+                              <img src="../static/images/shirt.jpg" class="ui large image zoom_image"
+                                    style="height:250px;">
+                              <!--  style="height: 320px;" for body -->
+                        </div>
+                        <div class="content">
+                              <p><a href="/shop/cats_views" style="color:black;"><strong>Lorem ipsum dolor, sit amet
+                                                consectetur
+                                                adipisicing elit.
+                                                Reprehenderit repudiandae...</strong></a></p>
+                        </div>
+
+                        <div class="extra content" style="text-align: center;">
+                              <a href="#">
+                                    <div data-rating="4" class="ui star rating">
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          &nbsp; 2334 Satrs
+                                    </div>
+                              </a>
+                        </div>
+
+                        <div class="extra content">
+                              <div class="ui two bottom attached basic buttons">
+                                    <div class="ui button">
+                                          Rs. 2.99
+                                    </div>
+                                    <div class="ui button">
+                                          AddToCart
+                                    </div>
+                              </div>
+                        </div>
+
+                  </div>
+            </div>
+
+            <!--  popular -->
+            <div class="ui four cards special cards  stackable fluid" style="padding-bottom: 5%">
+                  <!-- looping  -->
+                  <div class="card ">
+                        <div class="blurring dimmable image image_over_flow">
+                              <img src="../static/images/shirt.jpg" class="ui large image zoom_image"
+                                    style="height:250px;">
+                              <!--  style="height: 320px;" for body -->
+                        </div>
+                        <div class="content">
+                              <p><a href="/shop/cats_views" style="color:black;"><strong>Lorem ipsum dolor, sit amet
+                                                consectetur
+                                                adipisicing elit.
+                                                Reprehenderit repudiandae...</strong></a></p>
+                        </div>
+
+                        <div class="extra content" style="text-align: center;">
+                              <a href="#">
+                                    <div data-rating="4" class="ui star rating">
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          &nbsp; 2334 Satrs
+                                    </div>
+                              </a>
+                        </div>
+
+                        <div class="extra content">
+                              <div class="ui two bottom attached basic buttons">
+                                    <div class="ui button">
+                                          Rs. 2.99
+                                    </div>
+                                    <div class="ui button">
+                                          AddToCart
+                                    </div>
+                              </div>
+                        </div>
+
+                  </div>
+                  <div class="card ">
+                        <div class="blurring dimmable image image_over_flow">
+                              <img src="../static/images/shirt.jpg" class="ui large image zoom_image"
+                                    style="height:250px;">
+                              <!--  style="height: 320px;" for body -->
+                        </div>
+                        <div class="content">
+                              <p><a href="/shop/cats_views" style="color:black;"><strong>Lorem ipsum dolor, sit amet
+                                                consectetur
+                                                adipisicing elit.
+                                                Reprehenderit repudiandae...</strong></a></p>
+                        </div>
+
+                        <div class="extra content" style="text-align: center;">
+                              <a href="#">
+                                    <div data-rating="4" class="ui star rating">
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          &nbsp; 2334 Satrs
+                                    </div>
+                              </a>
+                        </div>
+
+                        <div class="extra content">
+                              <div class="ui two bottom attached basic buttons">
+                                    <div class="ui button">
+                                          Rs. 2.99
+                                    </div>
+                                    <div class="ui button">
+                                          AddToCart
+                                    </div>
+                              </div>
+                        </div>
+
+                  </div>
+                  <div class="card ">
+                        <div class="blurring dimmable image image_over_flow">
+                              <img src="../static/images/shirt.jpg" class="ui large image zoom_image"
+                                    style="height:250px;">
+                              <!--  style="height: 320px;" for body -->
+                        </div>
+                        <div class="content">
+                              <p><a href="/shop/cats_views" style="color:black;"><strong>Lorem ipsum dolor, sit amet
+                                                consectetur
+                                                adipisicing elit.
+                                                Reprehenderit repudiandae...</strong></a></p>
+                        </div>
+
+                        <div class="extra content" style="text-align: center;">
+                              <a href="#">
+                                    <div data-rating="4" class="ui star rating">
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          &nbsp; 2334 Satrs
+                                    </div>
+                              </a>
+                        </div>
+
+                        <div class="extra content">
+                              <div class="ui two bottom attached basic buttons">
+                                    <div class="ui button">
+                                          Rs. 2.99
+                                    </div>
+                                    <div class="ui button">
+                                          AddToCart
+                                    </div>
+                              </div>
+                        </div>
+
+                  </div>
+                  <div class="card ">
+                        <div class="blurring dimmable image image_over_flow">
+                              <img src="../static/images/shirt.jpg" class="ui large image zoom_image"
+                                    style="height:250px;">
+                              <!--  style="height: 320px;" for body -->
+                        </div>
+                        <div class="content">
+                              <p><a href="/shop/cats_views" style="color:black;"><strong>Lorem ipsum dolor, sit amet
+                                                consectetur
+                                                adipisicing elit.
+                                                Reprehenderit repudiandae...</strong></a></p>
+                        </div>
+
+                        <div class="extra content" style="text-align: center;">
+                              <a href="#">
+                                    <div data-rating="4" class="ui star rating">
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          &nbsp; 2334 Satrs
+                                    </div>
+                              </a>
+                        </div>
+
+                        <div class="extra content">
+                              <div class="ui two bottom attached basic buttons">
+                                    <div class="ui button">
+                                          Rs. 2.99
+                                    </div>
+                                    <div class="ui button">
+                                          AddToCart
+                                    </div>
+                              </div>
+                        </div>
+
+                  </div>
+                  <div class="card ">
+                        <div class="blurring dimmable image image_over_flow">
+                              <img src="../static/images/shirt.jpg" class="ui large image zoom_image"
+                                    style="height:250px;">
+                              <!--  style="height: 320px;" for body -->
+                        </div>
+                        <div class="content">
+                              <p><a href="/shop/cats_views" style="color:black;"><strong>Lorem ipsum dolor, sit amet
+                                                consectetur
+                                                adipisicing elit.
+                                                Reprehenderit repudiandae...</strong></a></p>
+                        </div>
+
+                        <div class="extra content" style="text-align: center;">
+                              <a href="#">
+                                    <div data-rating="4" class="ui star rating">
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          &nbsp; 2334 Satrs
+                                    </div>
+                              </a>
+                        </div>
+
+                        <div class="extra content">
+                              <div class="ui two bottom attached basic buttons">
+                                    <div class="ui button">
+                                          Rs. 2.99
+                                    </div>
+                                    <div class="ui button">
+                                          AddToCart
+                                    </div>
+                              </div>
+                        </div>
+
+                  </div>
+                  <div class="card ">
+                        <div class="blurring dimmable image image_over_flow">
+                              <img src="../static/images/shirt.jpg" class="ui large image zoom_image"
+                                    style="height:250px;">
+                              <!--  style="height: 320px;" for body -->
+                        </div>
+                        <div class="content">
+                              <p><a href="/shop/cats_views" style="color:black;"><strong>Lorem ipsum dolor, sit amet
+                                                consectetur
+                                                adipisicing elit.
+                                                Reprehenderit repudiandae...</strong></a></p>
+                        </div>
+
+                        <div class="extra content" style="text-align: center;">
+                              <a href="#">
+                                    <div data-rating="4" class="ui star rating">
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          &nbsp; 2334 Satrs
+                                    </div>
+                              </a>
+                        </div>
+
+                        <div class="extra content">
+                              <div class="ui two bottom attached basic buttons">
+                                    <div class="ui button">
+                                          Rs. 2.99
+                                    </div>
+                                    <div class="ui button">
+                                          AddToCart
+                                    </div>
+                              </div>
+                        </div>
+
+                  </div>
+                  <div class="card ">
+                        <div class="blurring dimmable image image_over_flow">
+                              <img src="../static/images/shirt.jpg" class="ui large image zoom_image"
+                                    style="height:250px;">
+                              <!--  style="height: 320px;" for body -->
+                        </div>
+                        <div class="content">
+                              <p><a href="/shop/cats_views" style="color:black;"><strong>Lorem ipsum dolor, sit amet
+                                                consectetur
+                                                adipisicing elit.
+                                                Reprehenderit repudiandae...</strong></a></p>
+                        </div>
+
+                        <div class="extra content" style="text-align: center;">
+                              <a href="#">
+                                    <div data-rating="4" class="ui star rating">
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          &nbsp; 2334 Satrs
+                                    </div>
+                              </a>
+                        </div>
+
+                        <div class="extra content">
+                              <div class="ui two bottom attached basic buttons">
+                                    <div class="ui button">
+                                          Rs. 2.99
+                                    </div>
+                                    <div class="ui button">
+                                          AddToCart
+                                    </div>
+                              </div>
+                        </div>
+
+                  </div>
+                  <div class="card ">
+                        <div class="blurring dimmable image image_over_flow">
+                              <img src="../static/images/shirt.jpg" class="ui large image zoom_image"
+                                    style="height:250px;">
+                              <!--  style="height: 320px;" for body -->
+                        </div>
+                        <div class="content">
+                              <p><a href="/shop/cats_views" style="color:black;"><strong>Lorem ipsum dolor, sit amet
+                                                consectetur
+                                                adipisicing elit.
+                                                Reprehenderit repudiandae...</strong></a></p>
+                        </div>
+
+                        <div class="extra content" style="text-align: center;">
+                              <a href="#">
+                                    <div data-rating="4" class="ui star rating">
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          &nbsp; 2334 Satrs
+                                    </div>
+                              </a>
+                        </div>
+
+                        <div class="extra content">
+                              <div class="ui two bottom attached basic buttons">
+                                    <div class="ui button">
+                                          Rs. 2.99
+                                    </div>
+                                    <div class="ui button">
+                                          AddToCart
+                                    </div>
+                              </div>
+                        </div>
+
+                  </div>
+            </div>
+
+            <!-- best -->
+            <div class="ui four cards special cards  stackable fluid" style="padding-bottom: 5%">
+                  <!-- looping  -->
+                  <div class="card ">
+                        <div class="blurring dimmable image image_over_flow">
+                              <img src="../static/images/shirt.jpg" class="ui large image zoom_image"
+                                    style="height:250px;">
+                              <!--  style="height: 320px;" for body -->
+                        </div>
+                        <div class="content">
+                              <p><a href="/shop/cats_views" style="color:black;"><strong>Lorem ipsum dolor, sit amet
+                                                consectetur
+                                                adipisicing elit.
+                                                Reprehenderit repudiandae...</strong></a></p>
+                        </div>
+
+                        <div class="extra content" style="text-align: center;">
+                              <a href="#">
+                                    <div data-rating="4" class="ui star rating">
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          &nbsp; 2334 Satrs
+                                    </div>
+                              </a>
+                        </div>
+
+                        <div class="extra content">
+                              <div class="ui two bottom attached basic buttons">
+                                    <div class="ui button">
+                                          Rs. 2.99
+                                    </div>
+                                    <div class="ui button">
+                                          AddToCart
+                                    </div>
+                              </div>
+                        </div>
+
+                  </div>
+                  <div class="card ">
+                        <div class="blurring dimmable image image_over_flow">
+                              <img src="../static/images/shirt.jpg" class="ui large image zoom_image"
+                                    style="height:250px;">
+                              <!--  style="height: 320px;" for body -->
+                        </div>
+                        <div class="content">
+                              <p><a href="/shop/cats_views" style="color:black;"><strong>Lorem ipsum dolor, sit amet
+                                                consectetur
+                                                adipisicing elit.
+                                                Reprehenderit repudiandae...</strong></a></p>
+                        </div>
+
+                        <div class="extra content" style="text-align: center;">
+                              <a href="#">
+                                    <div data-rating="4" class="ui star rating">
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          &nbsp; 2334 Satrs
+                                    </div>
+                              </a>
+                        </div>
+
+                        <div class="extra content">
+                              <div class="ui two bottom attached basic buttons">
+                                    <div class="ui button">
+                                          Rs. 2.99
+                                    </div>
+                                    <div class="ui button">
+                                          AddToCart
+                                    </div>
+                              </div>
+                        </div>
+
+                  </div>
+                  <div class="card ">
+                        <div class="blurring dimmable image image_over_flow">
+                              <img src="../static/images/shirt.jpg" class="ui large image zoom_image"
+                                    style="height:250px;">
+                              <!--  style="height: 320px;" for body -->
+                        </div>
+                        <div class="content">
+                              <p><a href="/shop/cats_views" style="color:black;"><strong>Lorem ipsum dolor, sit amet
+                                                consectetur
+                                                adipisicing elit.
+                                                Reprehenderit repudiandae...</strong></a></p>
+                        </div>
+
+                        <div class="extra content" style="text-align: center;">
+                              <a href="#">
+                                    <div data-rating="4" class="ui star rating">
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          &nbsp; 2334 Satrs
+                                    </div>
+                              </a>
+                        </div>
+
+                        <div class="extra content">
+                              <div class="ui two bottom attached basic buttons">
+                                    <div class="ui button">
+                                          Rs. 2.99
+                                    </div>
+                                    <div class="ui button">
+                                          AddToCart
+                                    </div>
+                              </div>
+                        </div>
+
+                  </div>
+                  <div class="card ">
+                        <div class="blurring dimmable image image_over_flow">
+                              <img src="../static/images/shirt.jpg" class="ui large image zoom_image"
+                                    style="height:250px;">
+                              <!--  style="height: 320px;" for body -->
+                        </div>
+                        <div class="content">
+                              <p><a href="/shop/cats_views" style="color:black;"><strong>Lorem ipsum dolor, sit amet
+                                                consectetur
+                                                adipisicing elit.
+                                                Reprehenderit repudiandae...</strong></a></p>
+                        </div>
+
+                        <div class="extra content" style="text-align: center;">
+                              <a href="#">
+                                    <div data-rating="4" class="ui star rating">
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          &nbsp; 2334 Satrs
+                                    </div>
+                              </a>
+                        </div>
+
+                        <div class="extra content">
+                              <div class="ui two bottom attached basic buttons">
+                                    <div class="ui button">
+                                          Rs. 2.99
+                                    </div>
+                                    <div class="ui button">
+                                          AddToCart
+                                    </div>
+                              </div>
+                        </div>
+
+                  </div>
+                  <div class="card ">
+                        <div class="blurring dimmable image image_over_flow">
+                              <img src="../static/images/shirt.jpg" class="ui large image zoom_image"
+                                    style="height:250px;">
+                              <!--  style="height: 320px;" for body -->
+                        </div>
+                        <div class="content">
+                              <p><a href="/shop/cats_views" style="color:black;"><strong>Lorem ipsum dolor, sit amet
+                                                consectetur
+                                                adipisicing elit.
+                                                Reprehenderit repudiandae...</strong></a></p>
+                        </div>
+
+                        <div class="extra content" style="text-align: center;">
+                              <a href="#">
+                                    <div data-rating="4" class="ui star rating">
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          &nbsp; 2334 Satrs
+                                    </div>
+                              </a>
+                        </div>
+
+                        <div class="extra content">
+                              <div class="ui two bottom attached basic buttons">
+                                    <div class="ui button">
+                                          Rs. 2.99
+                                    </div>
+                                    <div class="ui button">
+                                          AddToCart
+                                    </div>
+                              </div>
+                        </div>
+
+                  </div>
+                  <div class="card ">
+                        <div class="blurring dimmable image image_over_flow">
+                              <img src="../static/images/shirt.jpg" class="ui large image zoom_image"
+                                    style="height:250px;">
+                              <!--  style="height: 320px;" for body -->
+                        </div>
+                        <div class="content">
+                              <p><a href="/shop/cats_views" style="color:black;"><strong>Lorem ipsum dolor, sit amet
+                                                consectetur
+                                                adipisicing elit.
+                                                Reprehenderit repudiandae...</strong></a></p>
+                        </div>
+
+                        <div class="extra content" style="text-align: center;">
+                              <a href="#">
+                                    <div data-rating="4" class="ui star rating">
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          &nbsp; 2334 Satrs
+                                    </div>
+                              </a>
+                        </div>
+
+                        <div class="extra content">
+                              <div class="ui two bottom attached basic buttons">
+                                    <div class="ui button">
+                                          Rs. 2.99
+                                    </div>
+                                    <div class="ui button">
+                                          AddToCart
+                                    </div>
+                              </div>
+                        </div>
+
+                  </div>
+                  <div class="card ">
+                        <div class="blurring dimmable image image_over_flow">
+                              <img src="../static/images/shirt.jpg" class="ui large image zoom_image"
+                                    style="height:250px;">
+                              <!--  style="height: 320px;" for body -->
+                        </div>
+                        <div class="content">
+                              <p><a href="/shop/cats_views" style="color:black;"><strong>Lorem ipsum dolor, sit amet
+                                                consectetur
+                                                adipisicing elit.
+                                                Reprehenderit repudiandae...</strong></a></p>
+                        </div>
+
+                        <div class="extra content" style="text-align: center;">
+                              <a href="#">
+                                    <div data-rating="4" class="ui star rating">
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          &nbsp; 2334 Satrs
+                                    </div>
+                              </a>
+                        </div>
+
+                        <div class="extra content">
+                              <div class="ui two bottom attached basic buttons">
+                                    <div class="ui button">
+                                          Rs. 2.99
+                                    </div>
+                                    <div class="ui button">
+                                          AddToCart
+                                    </div>
+                              </div>
+                        </div>
+
+                  </div>
+                  <div class="card ">
+                        <div class="blurring dimmable image image_over_flow">
+                              <img src="../static/images/shirt.jpg" class="ui large image zoom_image"
+                                    style="height:250px;">
+                              <!--  style="height: 320px;" for body -->
+                        </div>
+                        <div class="content">
+                              <p><a href="/shop/cats_views" style="color:black;"><strong>Lorem ipsum dolor, sit amet
+                                                consectetur
+                                                adipisicing elit.
+                                                Reprehenderit repudiandae...</strong></a></p>
+                        </div>
+
+                        <div class="extra content" style="text-align: center;">
+                              <a href="#">
+                                    <div data-rating="4" class="ui star rating">
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          &nbsp; 2334 Satrs
+                                    </div>
+                              </a>
+                        </div>
+
+                        <div class="extra content">
+                              <div class="ui two bottom attached basic buttons">
+                                    <div class="ui button">
+                                          Rs. 2.99
+                                    </div>
+                                    <div class="ui button">
+                                          AddToCart
+                                    </div>
+                              </div>
+                        </div>
+
+                  </div>
+            </div>
+
+      </div>
+</div>
+<hr>
+
+<section class="1" style="height:50vh; text-align:center;">
+      <a href="/shop/cats_views">
+            <h1>cats 2</h1>
+      </a>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit esse delectus, odit dolorum nihil nobis
+            nesciunt! Saepe harum cumque odio tempora, dicta accusantium eum assumenda minima placeat delectus nam
+            est molestias deserunt quae officia vero quos autem possimus vitae ducimus obcaecati qui consectetur
+            quibusdam explicabo. Temporibus quisquam pariatur sequi veritatis architecto officiis praesentium
+            excepturi, id quis nulla dolorem sit consequuntur illum exercitationem labore expedita. Quae
+            necessitatibus itaque et sunt numquam nisi, dolorem eos officiis aliquam unde dolores, eaque doloribus
+            dolor maiores eveniet suscipit recusandae. Nam quod ut ipsa rem odit animi, pariatur cum possimus et
+            saepe deserunt in laborum placeat.</p>
+</section>
+<h1 style="text-align: center;">pagination</h1>
+{% endblock body %}

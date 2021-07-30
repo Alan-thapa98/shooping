@@ -1,0 +1,498 @@
+{% extends 'base.html' %}
+{% block title %}
+cats views
+{% endblock title %}
+{% block body %}
+<style>
+      .animate_left {
+            flex-basis: 50%;
+            animation: animate 3s linear infinite;
+      }
+
+      .animate_left img {
+            width: 97%;
+      }
+
+      @keyframes animate {
+            0% {
+                  transform: scale(1.1);
+            }
+
+            50% {
+                  transform: scale(1);
+            }
+
+            100% {
+                  transform: scale(1.1);
+            }
+      }
+</style>
+<!-- body {
+            background-color: #e0e1e2 !important;
+      } -->
+
+
+
+<div class="ui vertical stripe segment">
+      <div class="ui grid ">
+            <div class="row" style="top: 20px;width: 100%; ">
+                  <!-- image and animations -->
+                  <div class="eight wide right floated column"
+                        style="position: sticky; top: 0px; width: 100%; height: 80vh;">
+                        <div class="animate_left">
+                              <img class="ui large" src="../static/images/shirt.jpg"
+                                    style="width: 97%; height: auto; margin-left:10px;">
+                        </div>
+
+                        <br>
+                        <!-- money -->
+                        <p style=" font-size:1.2rem; text-align: center;">
+                              20% Discount!!! | <strike>Rs.1234.99</strike> |Rs.903.99
+                        </p>
+                        <!-- add to cart and rating -->
+                        <div class="ui two top attached basic buttons">
+                              <div class="ui button">
+                                    <span class=" floated star">
+                                          <!-- <i class="star icon"></i> -->
+                                          <a href="#">
+                                                <div data-rating="4" class="ui star rating">
+                                                      <i class="icon active"></i>
+                                                      <i class="icon active"></i>
+                                                      <i class="icon active"></i>
+                                                      <i class="icon active"></i>
+                                                      <i class="icon active"></i>
+                                                      &nbsp;
+                                                </div>
+                                          </a>
+                                          <span>Give Satrs</span>
+                                    </span>
+                              </div>
+                              <div class="ui large  button">
+                                    Add To Cart
+                              </div>
+                        </div>
+                        <!-- social icons -->
+                        <p style="text-align: center;">
+                              <i class="star icon active"></i>
+                              <i class="facebook icon active"></i>
+                              <i class="google icon active"></i>
+                              <i class="youtube icon active"></i>
+                              <i class="twitter icon active"></i>
+
+                        </p>
+                  </div>
+
+                  <!-- rating offers discount and others stuffs -->
+                  <div class="eight wide column">
+                        <!-- name -->
+                        <p class="ui header">
+                              Name : Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto veniam
+                              temporibus
+                              beatae necessitatibus nulla aliquam facilis nihil? Distinctio nemo possimus sint
+                              molestias
+                              quisquam esse
+                        </p>
+                        <!-- rating -->
+                        <p style="color: skyblue; font-size:15px;">
+                              <a href="#">
+                                    <div data-rating="4" class="ui star rating">
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          <i class="icon active"></i>
+                                          &nbsp;
+                                    </div>
+                                    2334 - Rating <span style="color:black;">|</span> 1423
+                                    - comments
+                              </a>
+                        </p>
+                        <hr style="color:skyblue;">
+                        <hr style="background-color: skyblue;">
+                        <!-- descount offers -->
+                        <div class="right">
+                              <h1
+                                    style="font-size: 2em;  margin-block-start: 0.67em;  margin-block-end: 0.67em;  margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;">
+                                    Best Festival Offers</h1>
+                              <p style=" font-size:1.5rem">
+                                    We are providing best quality materials. We have best quality clothes, shoes
+                                    for man
+                                    and womens.
+                              </p>
+                              <p style=" font-size:1.2rem">
+                                    20% Discount!!! | <strike>Rs.1234.99</strike> |Rs.903.99 <button
+                                          class="ui  black tiny  button">AddTOCart</button>
+                              </p>
+                        </div>
+                        <hr>
+                        <!--   techonologey discriptions.  -->
+                        <p class="ui header">
+                              techonologey discriptions.
+                        </p>
+                        <div class="ui grid">
+                              <div class="row">
+                                    <div class="column five wide">
+                                          <b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati,
+                                                nobis!
+                                                Accusamus nulla </b>
+                                    </div>
+                                    <div class="column eleven wide">
+                                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+                                          asperiores
+                                          quas alias! Perferendis esse consequatur quaerat non cupiditate aperiam
+                                          dolore
+                                          iure? Impedit molestiae eaque ratione mollitia. Eveniet quas porro
+                                          cumque!
+                                    </div>
+                              </div>
+                        </div>
+                        <!-- these is the others info -->
+                        <p class="ui header">
+                              others inforamations
+                        </p>
+                        <div class="description">
+                              <!-- max-1500 -->
+                              <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, quis! Qui non
+                                    voluptate, ad corporis, similique voluptates ullam aliquam perspiciatis illo
+                                    pariatur totam quasi odio omnis, quas ratione. Nisi quos voluptas, aspernatur
+                                    quia
+                                    provident iusto! Architecto quaerat repellendus itaque possimus, commodi
+                                    distinctio
+                                    dolorem amet voluptate quis, vitae pariatur iusto inventore aliquam quia ab
+                                    laudantium nisi, dolore est. Eum, eligendi magni. Nemo omnis repellat
+                                    necessitatibus. Placeat, pariatur minima veniam iusto omnis velit dolores
+                                    veritatis
+                                    rerum? Alias amet animi, commodi provident inventore suscipit debitis labore
+                                    iure?
+                                    Soluta, rem laboriosam. Pariatur, laboriosam! Repudiandae a nulla esse,
+                                    molestias
+                                    dolor odit numquam culpa soluta cupiditate, assumenda nihil eius, quidem
+                                    accusantium
+                                    tenetur itaque magni. Quaerat, id? Pariatur illum inventore porro distinctio,
+                                    assumenda ipsum rem labore explicabo numquam! Iusto a commodi repellat omnis
+                                    veritatis magnam, consequuntur fugit accusantium assumenda laudantium
+                                    molestiae
+                                    eveniet expedita quis tempore rem sit quae architecto. Saepe voluptatem
+                                    voluptate
+                                    vero, eligendi ea iusto expedita delectus nemo culpa omnis quos debitis soluta
+                                    ducimus excepturi quis officia totam assumenda. Nihil recusandae enim eum
+                                    reiciendis, porro possimus! Totam iusto maxime omnis eveniet esse perspiciatis
+                                    repudiandae dolor provident optio quod blanditiis dolorem voluptate numquam
+                                    placeat
+                                    soluta quam veritatis sed dolores dolorum, culpa ratione adipisci magni!
+                                    Recusandae
+                                    cupiditate inventore est facere rerum vel animi possimus nihil, at veritatis
+                                    sit
+                                    laborum numquam distinctio dolorum nostrum, ea iste molestias voluptatem
+                                    libero,
+                                    vero provident assumenda delectus cum deleniti. Illo ut corporis laboriosam
+                                    corrupti
+                                    dicta nobis, nesciunt deserunt magni reprehenderit ratione velit adipisci
+                                    maiores
+                                    ab! Illum dolore ducimus fugit officia, distinctio accusantium veritatis
+                                    consectetur
+                                    aperiam architecto officiis mollitia nesciunt odit eligendi exercitationem ad
+                                    pariatur sint asperiores rem debitis repellendus vel! Recusandae omnis nostrum
+                                    vitae
+                                    dolores, quae fugiat saepe sit modi, quos nulla, voluptatibus animi nihil.
+                                    Mollitia
+                                    iure provident delectus, soluta atque aspernatur nemo harum maxime, ex id
+                                    perferendis expedita repellendus odit est eos voluptas nisi debitis quis
+                                    similique
+                                    cum tempore, accusantium odio perspiciatis recusandae! Eaque, ad ab
+                                    dignissimos,
+                                    sequi illo repudiandae voluptates sit repellendus temporibus, ducimus hic
+                                    similique
+                                    sint? Accusantium molestias perspiciatis consequatur aliquam alias sunt magnam
+                                    quod
+                                    nemo quisquam fugit rem aliquid nisi quasi tenetur distinctio quam excepturi,
+                                    esse
+                                    numquam amet atque? Cumque corrupti maiores nam ipsum error animi nisi magnam
+                                    ullam
+                                    molestiae saepe laudantium omnis eos accusantium repellendus veritatis
+                                    obcaecati
+                                    doloremque porro sed dignissimos enim architecto, suscipit quibusdam expedita
+                                    sint.
+                                    Quam ipsa minima doloremque veniam ea vel excepturi delectus ipsum quae
+                                    laboriosam
+                                    alias tempore, incidunt repudiandae odit modi ratione assumenda quos sed fuga
+                                    culpa
+                                    eveniet aliquid. Rerum, quam beatae adipisci distinctio quibusdam sed quod
+                                    veniam
+                                    magnam. Optio, modi esse labore recusandae omnis aliquam laboriosam sunt
+                                    similique
+                                    numquam et, excepturi quo itaque ratione quis quas molestiae enim iste id
+                                    porro,
+                                    soluta libero maiores ex quia. Praesentium quae perspiciatis ab autem fugit
+                                    eligendi
+                                    modi blanditiis excepturi pariatur facilis id sint minima ex eum tempora
+                                    mollitia
+                                    recusandae, iste laboriosam atque quis amet? Laborum consequatur nulla maiores
+                                    non
+                                    facilis, cumque provident porro commodi libero, magni beatae architecto hic
+                                    mollitia
+                                    ab eos vitae doloribus qui! Ducimus ullam quibusdam consectetur, corporis
+                                    tempora
+                                    odio, doloribus labore distinctio delectus consequuntur quod quasi ab
+                                    deserunt!
+                                    Itaque magnam totam enim rem pariatur numquam, est ullam nobis, voluptatibus
+                                    molestiae nisi. Nostrum quas culpa harum asperiores corporis? Blanditiis
+                                    perferendis
+                                    error pariatur nisi vero exercitationem reprehenderit aliquam cupiditate
+                                    harum,
+                                    molestias quidem eligendi nostrum dolor veniam ipsum itaque esse quasi nemo.
+                                    Voluptatibus aliquam soluta eum id doloremque iusto ipsa. Voluptatum quod nemo
+                                    odit
+                                    quas nostrum doloribus quasi officia asperiores voluptas minima, suscipit in.
+                                    Ducimus illum architecto pariatur quod dignissimos officia iusto repudiandae
+                                    id, in
+                                    quia aperiam, similique corporis aspernatur consequuntur esse, doloremque
+                                    saepe
+                                    accusantium quas nulla illo aliquam ea tempora nemo sed? Voluptates, odio
+                                    iste.
+
+
+                              </p>
+                        </div>
+                  </div>
+            </div>
+      </div>
+
+      <!-- Realated products      -->
+      <div class="ui container">
+            <div class="ui grid">
+                  <div class="row">
+                        <p class="heading">These is the heading.</p>
+                        <p class="descritption">
+                              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam eos cupiditate iure,
+                              veritatis similique doloremque odit commodi porro incidunt, eveniet laborum sapiente.
+                              Architecto,
+                              laboriosam esse! Quam, recusandae aliquam. Explicabo, laborum!
+                        </p>
+                  </div>
+            </div>
+      </div>
+      <!-- comment feadbak and others stuffs  -->
+      <!-- comments and others suffs  -->
+      <br>
+      <br>
+      <div class="ui container">
+            <div class="ui grid">
+                  <div class="row">
+
+                        <!-- comment -->
+                        <div class="column ten wide">
+                              <section style="width: 100%;" class="comments">
+                                    <h1 style="text-align:center;">comments/feadback</h1>
+
+                                    <form action="" method="POST" class='ui fluid form'>
+                                          <div class="ui grid">
+                                                <div class="row">
+                                                      <div class="thirteen wide column">
+                                                            <input type="" name="post_id" value=''
+                                                                  style="    width: 100%; height: 38px; border-radius: 7px;">
+                                                      </div>
+                                                      <div class="three wide column ">
+                                                            <button type="submit" name="submit_c_form"
+                                                                  class="ui primary button  w-full">Send</button>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                    </form>
+
+                                    <div class="ui large comments">
+                                          <h3 class="ui dividing header">Comments: 8 </h3>
+                                          <div class="comment">
+                                                <a class="avatar">
+                                                      <img class="ui avatar image"
+                                                            style="border-radius: 20px; height:36px; width:40px;"
+                                                            src="../static/images/punch.jpg">
+                                                </a>
+                                                <div class="content">
+                                                      <a class="author">Matt</a>
+                                                      <div class="metadata">
+                                                            <span class="date">Today at 5:42PM</span>
+                                                      </div>
+                                                      <div class="text">
+                                                            How artistic!
+                                                      </div>
+                                                      <div class="actions">
+                                                            <a class="reply">Reply</a>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                          <div class="comment">
+                                                <a class="avatar">
+                                                      <img class="ui avatar image"
+                                                            style="border-radius: 20px; height:36px; width:40px;"
+                                                            src="../static/images/punch.jpg">
+                                                </a>
+                                                <div class="content">
+                                                      <a class="author">Elliot Fu</a>
+                                                      <div class="metadata">
+                                                            <span class="date">Yesterday at 12:30AM</span>
+                                                      </div>
+                                                      <div class="text">
+                                                            <p>This has been very useful for my research. Thanks
+                                                                  as
+                                                                  well!</p>
+                                                      </div>
+                                                      <div class="actions">
+                                                            <a class="reply">Reply</a>
+                                                      </div>
+                                                </div>
+                                                <div class="comments">
+                                                      <div class="comment">
+                                                            <a class="avatar">
+                                                                  <img class="ui avatar image"
+                                                                        style="border-radius: 20px; height:36px; width:40px;"
+                                                                        src="../static/images/punch.jpg">
+                                                            </a>
+                                                            <div class="content">
+                                                                  <a class="author">Jenny Hess</a>
+                                                                  <div class="metadata">
+                                                                        <span class="date">Just now</span>
+                                                                  </div>
+                                                                  <div class="text">
+                                                                        Elliot you are always so right :)
+                                                                  </div>
+                                                                  <div class="actions">
+                                                                        <a class="reply">Reply</a>
+                                                                  </div>
+                                                            </div>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                          <div class="comment">
+                                                <a class="avatar">
+                                                      <img class="ui avatar image"
+                                                            style="border-radius: 20px; height:36px; width:40px;"
+                                                            src="../static/images/punch.jpg">
+                                                </a>
+                                                <div class="content">
+                                                      <a class="author">Joe Henderson</a>
+                                                      <div class="metadata">
+                                                            <span class="date">5 days ago</span>
+                                                      </div>
+                                                      <div class="text">
+                                                            Dude, this is awesome. Thanks so much
+                                                      </div>
+                                                      <div class="actions">
+                                                            <a class="reply">Reply</a>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                          <div class="comment">
+                                                <a class="avatar">
+                                                      <img class="ui avatar image"
+                                                            style="border-radius: 20px; height:36px; width:40px;"
+                                                            src="../static/images/punch.jpg">
+                                                </a>
+                                                <div class="content">
+                                                      <a class="author">Matt</a>
+                                                      <div class="metadata">
+                                                            <span class="date">Today at 5:42PM</span>
+                                                      </div>
+                                                      <div class="text">
+                                                            How artistic!
+                                                      </div>
+                                                      <div class="actions">
+                                                            <a class="reply">Reply</a>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                          <div class="comment">
+                                                <a class="avatar">
+                                                      <img class="ui avatar image"
+                                                            style="border-radius: 20px; height:36px; width:40px;"
+                                                            src="../static/images/punch.jpg">
+                                                </a>
+                                                <div class="content">
+                                                      <a class="author">Elliot Fu</a>
+                                                      <div class="metadata">
+                                                            <span class="date">Yesterday at 12:30AM</span>
+                                                      </div>
+                                                      <div class="text">
+                                                            <p>This has been very useful for my research. Thanks
+                                                                  as
+                                                                  well!</p>
+                                                      </div>
+                                                      <div class="actions">
+                                                            <a class="reply">Reply</a>
+                                                      </div>
+                                                </div>
+                                                <div class="comments">
+                                                      <div class="comment">
+                                                            <a class="avatar">
+                                                                  <img class="ui avatar image"
+                                                                        style="border-radius: 20px; height:36px; width:40px;"
+                                                                        src="../static/images/punch.jpg">
+                                                            </a>
+                                                            <div class="content">
+                                                                  <a class="author">Jenny Hess</a>
+                                                                  <div class="metadata">
+                                                                        <span class="date">Just now</span>
+                                                                  </div>
+                                                                  <div class="text">
+                                                                        Elliot you are always so right :)
+                                                                  </div>
+                                                                  <div class="actions">
+                                                                        <a class="reply">Reply</a>
+                                                                  </div>
+                                                            </div>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                          <div class="comment">
+                                                <a class="avatar">
+                                                      <img class="ui avatar image"
+                                                            style="border-radius: 20px; height:36px; width:40px;"
+                                                            src="../static/images/punch.jpg">
+                                                </a>
+                                                <div class="content">
+                                                      <a class="author">Joe Henderson</a>
+                                                      <div class="metadata">
+                                                            <span class="date">5 days ago</span>
+                                                      </div>
+                                                      <div class="text">
+                                                            Dude, this is awesome. Thanks so much
+                                                      </div>
+                                                      <div class="actions">
+                                                            <a class="reply">Reply</a>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                    </div>
+
+                              </section>
+
+                        </div>
+                        <div class="column six wide">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, nihil! Asperiores
+                              incidunt
+                              eos
+                              dicta, est eius sunt nemo voluptate beatae sint explicabo, pariatur id, ut maiores
+                              quidem
+                              vitae
+                              reprehenderit dolore.
+                              aids Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore cupiditate
+                              ratione
+                              voluptate doloribus a ipsa? Tempore, exercitationem. Eos aliquid, sunt assumenda
+                              quasi ut,
+                              mollitia non fugit, rem pariatur facere laudantium.
+                              <br>
+                              Aids
+                              <img src="../static/images/photo-4.jpg" alt="">
+                        </div>
+                  </div>
+            </div>
+      </div>
+
+
+
+</div>
+
+
+
+{% endblock body %}

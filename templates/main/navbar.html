@@ -1,0 +1,83 @@
+{% url 'shop' as shop %}
+<!-- top fixed -->
+<div class="ui inverted  menu " style="  border-radius: 0%;  margin-bottom: 0px;
+">
+      <div class="ui container">
+            <a href="{{shop}}" class="{% if request.path == shop %}active{% endif %} item">
+                  <h3>Shop</h3>
+            </a>
+
+            <!--  THE IS THE END OF AUTH AND OTHERS POSTS ONLAY SNOW FOR THE LONGIN ONCES -->
+
+            <div class="ui flot right item item">
+                  <form action="" method="GET">
+                        <div class="ui action left icon input">
+                              <input class="prompt" type="text" name='q' placeholder="Search friend...">
+                              <i class="search icon"></i>
+                              <button type='submit' class="ui button">Search</button>
+                        </div>
+                  </form>
+            </div>
+
+            <a href="/singup_page" class="ui flot right item">
+                  SignUp
+            </a>
+            <a href="#" class="{% if request.path == path_to_my_profile %}active{% endif %} item">
+                  <img src="" class="ui avatar image">&nbsp;
+                  {{ request.user }}
+            </a>
+            <a href="#" class=" ui flot right item ">
+                  Cart
+            </a>
+      </div>
+</div>
+<div class="ui inverted  menu " style="   border-radius: 0%;  margin-top: 0px;  margin-bottom: 0px;
+">
+      <div class="ui container">
+            <a href="#" class=" item">
+                  New
+            </a>
+            <a href="#" class=" item">
+                  Tranding
+            </a>
+            <a href="#" class=" item">
+                  Chipast
+            </a>
+            <a href="#" class=" item">
+                  Medium
+            </a>
+            <a href="#" class=" item">
+                  higer
+            </a>
+            <a href="#" class=" item">
+                  Make a Gift
+            </a>
+            <a href="#" class=" item">
+                  Home
+            </a>
+            <a href="#" class=" item">
+                  Store
+            </a>
+            <a href="#" class=" item">
+                  Cart
+            </a>
+            <a href="#" class=" item">
+                  Checkout
+            </a>
+            <a href="#" class=" item">
+                  store
+            </a>
+            <a href="#" class=" item">
+                  store
+            </a>
+            <a href="#" class=" item">
+                  store
+            </a><a href="#" class=" item">
+                  store
+            </a><a href="#" class=" item">
+                  store
+            </a><a href="#" class=" item">
+                  store
+            </a>
+      </div>
+</div>

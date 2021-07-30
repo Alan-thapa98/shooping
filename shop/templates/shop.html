@@ -1,0 +1,711 @@
+{% extends 'base.html' %}
+{% block title%}
+these is shop
+{% endblock title%}
+
+{% block body %}
+<div style="margin: 0px; padding:0px;">
+      <div class="slider">
+            <!-- fade css -->
+            <div class="myslide fade">
+                  <div class="txt">
+                        <h1>Toys For kids</h1>
+                        <p>Web Devoloper<br>Subscribe To My Channel For More Videos</p>
+                  </div>
+                  <img id="img" src="../static/images/tous.png" style="width: 100%; height: 100%;" alt="these is image">
+            </div>
+
+            <div class="myslide fade">
+                  <div class="txt">
+                        <h1>Sport materials</h1>
+                        <p>Web Devoloper<br>Subscribe To My Channel For More Videos</p>
+                  </div>
+                  <img id="img" src="../static/images/sport.png" style="width: 100%; height: 100%;">
+            </div>
+
+            <div class="myslide fade">
+                  <div class="txt">
+                        <h1>Sofa</h1>
+                        <p>Web Devoloper<br>Subscribe To My Channel For More Videos</p>
+                  </div>
+                  <img id="img" src="../static/images/sofa.jpeg" style="width: 100%; height: 100%;">
+            </div>
+
+            <div class="myslide fade">
+                  <div class="txt">
+                        <h1>electronic Devices</h1>
+                        <p>Web Devoloper<br>Subscribe To My Channel For More Videos</p>
+                  </div>
+                  <img id="img" src="../static/images/electronic.jpg" style="width: 100%; height: 100%;">
+            </div>
+
+            <div class="myslide fade">
+                  <div class="txt">
+                        <h1>electronic divices</h1>
+                        <p>Web Devoloper<br>Subscribe To My Channel For More Videos</p>
+                  </div>
+                  <img id="img" src="../static/images/sourcecode.jpg" style="width: 100%; height: 100%;">
+            </div>
+            <!-- /fade css -->
+
+            <!-- onclick js -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <div class="dotsbox" style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span>
+                  <span class="dot" onclick="currentSlide(2)"></span>
+                  <span class="dot" onclick="currentSlide(3)"></span>
+                  <span class="dot" onclick="currentSlide(4)"></span>
+                  <span class="dot" onclick="currentSlide(5)"></span>
+            </div>
+            <!-- /onclick js -->
+            <script>
+                  const myslide = document.querySelectorAll('.myslide'),
+                        dot = document.querySelectorAll('.dot');
+                  let counter = 1;
+                  slidefun(counter);
+
+                  let timer = setInterval(autoSlide, 8000);
+                  function autoSlide() {
+                        counter += 1;
+                        slidefun(counter);
+                  }
+                  function plusSlides(n) {
+                        counter += n;
+                        slidefun(counter);
+                        resetTimer();
+                  }
+                  function currentSlide(n) {
+                        counter = n;
+                        slidefun(counter);
+                        resetTimer();
+                  }
+                  function resetTimer() {
+                        clearInterval(timer);
+                        timer = setInterval(autoSlide, 8000);
+                  }
+
+                  function slidefun(n) {
+
+                        let i;
+                        for (i = 0; i < myslide.length; i++) {
+                              myslide[i].style.display = "none";
+                        }
+                        for (i = 0; i < dot.length; i++) {
+                              dot[i].className = dot[i].className.replace(' active', '');
+                        }
+                        if (n > myslide.length) {
+                              counter = 1;
+                        }
+                        if (n < 1) {
+                              counter = myslide.length;
+                        }
+                        myslide[counter - 1].style.display = "block";
+                        dot[counter - 1].className += " active";
+                  }
+            </script>
+
+      </div>
+
+      <style>
+            /* ========== Product ========== */
+
+            .product:hover {
+                  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+            }
+
+            .product .img__container {
+                  overflow: hidden;
+            }
+
+            .img__container img {
+                  transition: all 0.5s ease-in-out;
+            }
+
+            .product:hover .img__container img {
+                  transform: scale(1.05);
+            }
+
+            .wapper {
+                  overflow: hidden;
+
+            }
+
+            .cats_topic {
+                  text-align: center;
+                  text-transform: capitalize;
+
+            }
+
+            :root {
+                  --default-color: #e71247;
+                  --default-color2: #d64569;
+                  --dark-color: #222;
+                  --dark-color-alt: #3c4858;
+                  --grey-color: #f9fafd;
+                  --grey-color-alt: #8492a6;
+                  --yellow: #ffcc00;
+                  --white: #fff;
+            }
+      </style>
+
+      <div class="ui grid" style="padding: 20px;">
+            <div class="ui four cards">
+                  <div class="card">
+                        <div class="extra">
+                              <a href="/shop/cats" style="color: black; font-weight: bold;">
+                                    <span class="cats_topic">Find your match shirt.</span>
+                              </a>
+                        </div>
+                        <div class="image">
+                              <!-- <img src="../static/images/shirt.jpg" style="height:250px; width: 100%;"> -->
+                              <div class="product">
+                                    <div class="img__container">
+                                          <a href="/shop/cats"><img src="../static/images/shirt.jpg"
+                                                      style="height: 200px; width: 100%; cursor: pointer;" alt="">
+                                          </a>
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="extra center aligned">
+                              <a href="/shop/cats">
+                                    <span class="cats_topic" style="color: skyblue;">See All</span>
+                              </a>
+                        </div>
+                  </div>
+
+                  <div class="card">
+                        <div class="extra">
+                              <a href="/shop/cats" style="color: black; font-weight: bold;">
+                                    <span class="cats_topic">Find your match shirt.</span>
+                              </a>
+                        </div>
+                        <div class="image">
+                              <!-- <img src="../static/images/shirt.jpg" style="height:250px; width: 100%;"> -->
+                              <div class="product">
+                                    <div class="img__container">
+                                          <a href="/shop/cats"><img src="../static/images/shirt.jpg"
+                                                      style="height: 200px; width: 100%; cursor: pointer;" alt="">
+                                          </a>
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="extra center aligned">
+                              <a href="/shop/cats">
+                                    <span class="cats_topic" style="color: skyblue;">See All</span>
+                              </a>
+                        </div>
+                  </div>
+                  <div class="card">
+                        <div class="extra">
+                              <a href="/shop/cats" style="color: black; font-weight: bold;">
+                                    <span class="cats_topic">Find your match shirt.</span>
+                              </a>
+                        </div>
+                        <div class="image">
+                              <!-- <img src="../static/images/shirt.jpg" style="height:250px; width: 100%;"> -->
+                              <div class="product">
+                                    <div class="img__container">
+                                          <a href="/shop/cats"><img src="../static/images/shirt.jpg"
+                                                      style="height: 200px; width: 100%; cursor: pointer;" alt="">
+                                          </a>
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="extra center aligned">
+                              <a href="/shop/cats">
+                                    <span class="cats_topic" style="color: skyblue;">See All</span>
+                              </a>
+                        </div>
+                  </div>
+                  <div class="card">
+                        <div class="extra">
+                              <a href="/shop/cats" style="color: black; font-weight: bold;">
+                                    <span class="cats_topic">Find your match shirt.</span>
+                              </a>
+                        </div>
+                        <div class="image">
+                              <!-- <img src="../static/images/shirt.jpg" style="height:250px; width: 100%;"> -->
+                              <div class="product">
+                                    <div class="img__container">
+                                          <a href="/shop/cats"><img src="../static/images/shirt.jpg"
+                                                      style="height: 200px; width: 100%; cursor: pointer;" alt="">
+                                          </a>
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="extra center aligned">
+                              <a href="/shop/cats">
+                                    <span class="cats_topic" style="color: skyblue;">See All</span>
+                              </a>
+                        </div>
+                  </div>
+            </div>
+            <div class="ui four cards">
+                  <div class="ui card">
+                        <div class="content" style="background-color: #00a7ff;">
+                              <div class="header">
+                                    <a href="/shop/cats">
+                                          <span class="cats_topic">Find your match shirt.</span>
+                                    </a>
+                              </div>
+
+                        </div>
+                        <div class="image dimmable">
+
+                              <img class="ui large image" src="../static/images/photo-1.jpg">
+                        </div>
+                        <div class="content">
+                              <div class="description">
+                                    <a href="/shop/cats">See All</a>
+                              </div>
+                        </div>
+
+                  </div>
+                  <div class="ui card">
+                        <div class="content">
+                              <div class="header">
+                                    <a href="/shop/cats">
+                                          <span class="cats_topic">Find your match shirt.</span>
+                                    </a>
+                              </div>
+
+                        </div>
+                        <div class="image dimmable">
+
+                              <img src="../static/images/headphones.jpg">
+                        </div>
+                        <div class="content">
+                              <div class="description">
+                                    <a href="/shop/cats">See All</a>
+                              </div>
+                        </div>
+
+                  </div>
+                  <div class="ui card">
+                        <div class="content">
+                              <div class="header">
+                                    <a href="/shop/cats">
+                                          <span class="cats_topic">Find your match shirt.</span>
+                                    </a>
+                              </div>
+
+                        </div>
+                        <div class="image dimmable">
+
+                              <img src="../static/images/headphones.jpg">
+                        </div>
+                        <div class="content">
+                              <div class="description">
+                                    <a href="/shop/cats">See All</a>
+                              </div>
+                        </div>
+
+                  </div>
+                  <div class="ui card">
+                        <div class="content">
+                              <div class="header" style="background-color: #222;">
+                                    <a href="/shop/cats">
+                                          <span class="cats_topic">Find your match shirt.</span>
+                                    </a>
+                              </div>
+
+                        </div>
+                        <div class="image dimmable">
+
+                              <img src="../static/images/headphones.jpg">
+
+                        </div>
+                        <div class="content">
+                              <div class="description">
+                                    <a href="/shop/cats">See All</a>
+                              </div>
+                        </div>
+
+                  </div>
+
+
+            </div>
+            <div class="row">
+                  <!-- looping -->
+                  <div class="column four wide column_design">
+                        <div class="wapper">
+                              <a href="/shop/cats">
+                                    <h3 class="cats_topic">Find your match shirt.</h3>
+                              </a>
+                              <div class="product">
+                                    <div class="img__container">
+                                          <a href="/shop/cats"><img src="../static/images/shirt.jpg"
+                                                      style="height: 200px; width: 100%; cursor: pointer;" alt="">
+                                          </a>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+                  <div class="column four wide column_design">
+                        <div class="wapper">
+                              <a href="/shop/cats">
+                                    <h3 class="cats_topic">Find your match watch.</h3>
+                              </a>
+                              <div class="product">
+                                    <div class="img__container">
+                                          <a href="/shop/cats"><img src="../static/images/watch.jpg"
+                                                      style="height: 200px; width: 100%; cursor: pointer;" alt="">
+                                          </a>
+                                    </div>
+                              </div>
+                        </div>
+
+                  </div>
+                  <div class="column four wide column_design">
+                        <div class="wapper">
+                              <a href="/shop/cats">
+                                    <h3 class="cats_topic">Find your match shose.</h3>
+                              </a>
+                              <div class="product">
+                                    <div class="img__container">
+                                          <a href="/shop/cats"><img src="../static/images/shoes.jpg"
+                                                      style="height: 200px; width: 100%; cursor: pointer;" alt="">
+                                          </a>
+                                    </div>
+                              </div>
+                        </div>
+
+                  </div>
+                  <div class="column four wide column_design">
+                        <div class="wapper">
+                              <a href="/shop/cats">
+                                    <h3 class="cats_topic">Find your match Book.</h3>
+                              </a>
+                              <div class="product">
+                                    <div class="img__container">
+                                          <a href="/shop/cats"> <img src="../static/images/book.jpg"
+                                                      style="height: 200px; width: 100%; cursor: pointer;" alt="">
+                                          </a>
+                                    </div>
+                              </div>
+                        </div>
+
+                  </div>
+
+
+
+
+
+                  <div class="column four wide column_design">
+                        <div class="wapper">
+                              <a href="/shop/cats">
+                                    <h3 class="cats_topic">Find your match Anime.</h3>
+                              </a>
+                              <div class="product">
+                                    <div class="img__container">
+                                          <a href="/shop/cats"><img src="../static/images/punch.jpg"
+                                                      style="height: 200px; width: 100%; cursor: pointer;" alt="">
+                                          </a>
+                                    </div>
+                              </div>
+                        </div>
+
+                  </div>
+                  <div class="column four wide column_design">
+                        <div class="wapper">
+                              <a href="/shop/cats">
+                                    <h3 class="cats_topic">Find your match Book.</h3>
+                              </a>
+                              <div class="product">
+                                    <div class="img__container">
+                                          <a href="/shop/cats"><img src="../static/images/shirt.jpg"
+                                                      style="height: 200px; width: 100%; cursor: pointer;" alt="">
+                                          </a>
+                                    </div>
+                              </div>
+                        </div>
+
+                  </div>
+                  <div class="column four wide column_design">
+                        <div class="wapper">
+                              <a href="/shop/cats">
+                                    <h3 class="cats_topic">Find your match Book.</h3>
+                              </a>
+                              <div class="product">
+                                    <div class="img__container">
+                                          <a href="/shop/cats"><img src="../static/images/shirt.jpg"
+                                                      style="height: 200px; width: 100%; cursor: pointer;" alt="">
+                                          </a>
+                                    </div>
+                              </div>
+                        </div>
+
+                  </div>
+                  <div class="column four wide column_design">
+                        <div class="wapper">
+                              <a href="/shop/cats">
+                                    <h3 class="cats_topic">Find your match Book.</h3>
+                              </a>
+                              <div class="product">
+                                    <div class="img__container">
+                                          <a href="/shop/cats"><img src="../static/images/shirt.jpg"
+                                                      style="height: 200px; width: 100%; cursor: pointer;" alt="">
+                                          </a>
+                                    </div>
+                              </div>
+                        </div>
+
+                  </div>
+
+
+
+            </div>
+      </div>
+
+
+
+      <!-- 
+      <h1>clothes</h1>
+      <h1>cosmatics</h1>
+      <h1>kitchan tools</h1>
+      <h1>electronic devices</h1>
+      <h1>toys</h1>
+      <h1>furnature</h1>
+      <h1>sports</h1>
+      <h1>health</h1> -->
+
+
+</div>
+
+<style>
+      .slider {
+            position: relative;
+            width: 100%;
+            background: #2c3e50;
+            /* darckblue */
+      }
+
+      .myslide {
+            height: 40vh;
+            display: none;
+            overflow: hidden;
+      }
+
+      .prev,
+      .next {
+            position: absolute;
+            top: 50%;
+            transform: translate(0, -50%);
+            font-size: 50px;
+            padding: 15px;
+            cursor: pointer;
+            color: #fff;
+            transition: 0.1s;
+            user-select: none;
+      }
+
+      .prev:hover,
+      .next:hover {
+            color: #00a7ff;
+            /* blue */
+      }
+
+      .next {
+            right: 0;
+      }
+
+
+
+
+
+      /* /2 */
+
+      /* javascript */
+      .active,
+      .dot:hover {
+            border-color: #00a7ff;
+            /* blue */
+      }
+
+      /* /javascript */
+
+      /* muslide add fade */
+      .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+      }
+
+      @-webkit-keyframes fade {
+            from {
+                  opacity: 0.8
+            }
+
+            to {
+                  opacity: 1
+            }
+      }
+
+      @keyframes fade {
+            from {
+                  opacity: 0.8
+            }
+
+            to {
+                  opacity: 1
+            }
+      }
+
+      /* /muslide add fade */
+
+      /* 3 */
+      .txt {
+            position: absolute;
+            color: rgb(46, 45, 45);
+            letter-spacing: 2px;
+            line-height: 35px;
+            top: 40%;
+            left: 15%;
+            -webkit-animation-name: posi;
+            -webkit-animation-duration: 2s;
+            animation-name: posi;
+            animation-duration: 2s;
+            z-index: 1;
+      }
+
+      @-webkit-keyframes posi {
+            from {
+                  left: 25%;
+            }
+
+            to {
+                  left: 15%;
+            }
+      }
+
+
+      @keyframes posi {
+            from {
+                  left: 25%;
+            }
+
+            to {
+                  left: 15%;
+            }
+      }
+
+      .txt h1 {
+            color: #00a7ff;
+            /* blue */
+            font-size: 30px;
+            margin-bottom: 20px;
+      }
+
+      .txt p {
+            font-weight: bold;
+            font-size: 20px;
+      }
+
+      /* /3 */
+
+      /* 4 */
+      #img {
+            transform: scale(1.5, 1.5);
+            -webkit-animation-name: zoomin;
+            -webkit-animation-duration: 40s;
+            animation-name: zoomin;
+            animation-duration: 40s;
+      }
+
+      @-webkit-keyframes zoomin {
+            from {
+                  transform: scale(1, 1);
+            }
+
+            to {
+                  transform: scale(1.5, 1.5);
+            }
+      }
+
+
+      @keyframes zoomin {
+            from {
+                  transform: scale(1, 1);
+            }
+
+            to {
+                  transform: scale(1.5, 1.5);
+            }
+      }
+
+      /* /4 */
+
+
+
+      /* 5 */
+      @media screen and (max-width: 800px) {
+            .myslide {
+                  height: 500px;
+            }
+
+            .txt {
+                  letter-spacing: 2px;
+                  line-height: 25px;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -50%);
+                  -webkit-animation-name: posi2;
+                  -webkit-animation-duration: 2s;
+                  animation-name: posi2;
+                  animation-duration: 2s;
+            }
+
+            @-webkit-keyframes posi2 {
+                  from {
+                        top: 35%;
+                  }
+
+                  to {
+                        top: 50%;
+                  }
+            }
+
+
+            @keyframes posi2 {
+                  from {
+                        top: 35%;
+                  }
+
+                  to {
+                        top: 50%;
+                  }
+            }
+
+            .txt h1 {
+                  font-size: 30px;
+            }
+
+            .txt p {
+                  font-size: 13px;
+            }
+
+      }
+
+      /* /5 */
+
+      /* 6 */
+      @media screen and (max-width: 520px) {
+            .txt h1 {
+                  font-size: 20px;
+                  margin-bottom: 20px;
+            }
+
+            .sign {
+                  margin-right: 20px;
+            }
+
+            .sign a {
+                  font-size: 12px;
+            }
+      }
+</style>
+</div>
+{% endblock body %}

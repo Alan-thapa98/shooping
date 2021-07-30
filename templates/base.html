@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- jQuery -->
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+      <!--Custom css-->
+      <!-- <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}"> -->
+      <!-- semantic UI -->
+      <link rel="stylesheet" type='text/css'
+            href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.14/semantic.min.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+      <!-- these is the downloaded files  -->
+      <link rel="stylesheet" href="{% static 'semantic.min.css'%} ">
+      <!-- <link rel="stylesheet" href="{% static 'style.css'%} "> -->
+      <!-- <link rel="stylesheet" href="{% static 'bootstrap.min.css'%} "> -->
+
+
+      <title>
+            {% block title %}
+
+            {% endblock title %}
+      </title>
+</head>
+
+<body>
+      {% include 'main/navbar.html' %}
+      {% block body %}
+
+
+
+
+      {% endblock body %}
+      {% block script %}
+      {% endblock script %}
+      {% include 'main/fotter.html' %}
+      <script></script>
+      <script src="{% static 'semantic.min.js'%} "></script>
+      <!-- <script src="{% static 'bootstrap.min.js'%} "></script> -->
+      <script src="{% static 'jquery-3.3.1.min.js'%} "></script>
+      <script src="{% static 'main.js'%}"></script>
+
+</body>
+
+</html>
